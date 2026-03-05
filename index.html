@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="缘合Lab - 专注互联网应用开发，提供高品质数字化解决方案">
+  <meta name="keywords" content="缘合Lab,互联网应用开发,小程序开发,企业数字化,软件开发">
+  <title>缘合Lab - 互联网应用开发</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">&#x2B22;</span>
+        <span class="logo-text">缘合<span class="logo-accent">Lab</span></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">首页</a></li>
+        <li><a href="#services">业务</a></li>
+        <li><a href="#about">关于</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge" data-reveal>
+        <span class="badge-dot"></span>
+        互联网应用开发专家
+      </div>
+      <h1 class="hero-title" data-reveal>
+        <span class="title-line">缘合</span>
+        <span class="title-line title-accent">Lab</span>
+      </h1>
+      <p class="hero-subtitle" data-reveal>以技术为纽带，缘聚创新力量</p>
+      <p class="hero-desc" data-reveal>我们专注于互联网应用开发与数字化转型，用代码构建连接未来的桥梁</p>
+      <div class="hero-cta" data-reveal>
+        <a href="#services" class="btn btn-primary">
+          <span>探索业务</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">联系我们</a>
+      </div>
+    </div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow"></div>
+    <div class="scroll-indicator" data-reveal>
+      <div class="scroll-line"></div>
+      <span>向下滚动</span>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">OUR SERVICES</span>
+        <h2 class="section-title">业务领域</h2>
+        <p class="section-desc">覆盖全链路数字化需求，从创意到落地</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-reveal data-delay="0">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="8" width="36" height="28" rx="3"/>
+              <path d="M6 36h36M18 36v4M30 36v4M14 40h20"/>
+              <path d="M16 18l4 4-4 4M24 26h8" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Web 应用开发</h3>
+          <p class="card-desc">高性能响应式网站、企业管理系统、SaaS 平台，采用前沿技术栈构建</p>
+          <div class="card-tags">
+            <span>React</span><span>Vue</span><span>Node.js</span>
+          </div>
+        </div>
+        <div class="service-card" data-reveal data-delay="1">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="14" y="4" width="20" height="40" rx="4"/>
+              <circle cx="24" cy="38" r="2"/>
+              <path d="M20 4h8M14 10h20M14 34h20"/>
+              <rect x="18" y="16" width="12" height="12" rx="2" stroke-width="1"/>
+              <path d="M22 20l2 2-2 2M26 20l-2 2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">小程序开发</h3>
+          <p class="card-desc">微信、支付宝多端小程序开发，一套代码多平台运行，触达亿级用户</p>
+          <div class="card-tags">
+            <span>微信</span><span>支付宝</span><span>跨端</span>
+          </div>
+        </div>
+        <div class="service-card" data-reveal data-delay="2">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4v8M4 24h8M44 24h-8M24 44v-8"/>
+              <circle cx="24" cy="24" r="8"/>
+              <circle cx="24" cy="24" r="16" stroke-dasharray="4 4"/>
+              <circle cx="24" cy="8" r="3"/><circle cx="24" cy="40" r="3"/>
+              <circle cx="8" cy="24" r="3"/><circle cx="40" cy="24" r="3"/>
+            </svg>
+          </div>
+          <h3 class="card-title">企业数字化方案</h3>
+          <p class="card-desc">量身定制数字化转型策略，打通数据孤岛，提升运营效率与决策能力</p>
+          <div class="card-tags">
+            <span>咨询</span><span>集成</span><span>数据</span>
+          </div>
+        </div>
+        <div class="service-card" data-reveal data-delay="3">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 12h32v28H8z" stroke-width="1.5"/>
+              <path d="M8 12l16-8 16 8"/>
+              <path d="M20 40V28h8v12"/>
+              <rect x="14" y="18" width="6" height="6" rx="1"/>
+              <rect x="28" y="18" width="6" height="6" rx="1"/>
+              <path d="M24 4v2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">移动应用开发</h3>
+          <p class="card-desc">iOS 与 Android 原生及跨平台应用，流畅体验与卓越性能兼得</p>
+          <div class="card-tags">
+            <span>Flutter</span><span>iOS</span><span>Android</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content" data-reveal>
+          <span class="section-tag">ABOUT US</span>
+          <h2 class="section-title">关于缘合Lab</h2>
+          <p class="about-text">
+            缘合Lab 是一家专注于互联网应用开发的技术公司。我们相信技术的力量可以重塑商业模式，以"缘聚创新"为核心理念，汇聚优秀技术人才，为客户提供从产品设计、技术开发到运维部署的全生命周期服务。
+          </p>
+          <p class="about-text">
+            团队成员深耕互联网行业多年，具备丰富的项目交付经验与技术积累，致力于用高质量的代码和创新的解决方案，帮助企业在数字化浪潮中抢占先机。
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">项目交付</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="30">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">合作客户</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="99">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">客户满意度</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" data-reveal>
+          <div class="visual-orb">
+            <div class="orb-ring orb-ring-1"></div>
+            <div class="orb-ring orb-ring-2"></div>
+            <div class="orb-ring orb-ring-3"></div>
+            <div class="orb-core"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">CONTACT</span>
+        <h2 class="section-title">联系我们</h2>
+        <p class="section-desc">期待与您的合作</p>
+      </div>
+      <div class="contact-grid" data-reveal>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <span class="contact-label">邮箱</span>
+          <span class="contact-value">contact@yuanhelab.com</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <span class="contact-label">地址</span>
+          <span class="contact-value">中国</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">&#x2B22;</span>
+          <span class="logo-text">缘合<span class="logo-accent">Lab</span></span>
+        </div>
+        <div class="footer-links">
+          <a href="#services">业务</a>
+          <a href="#about">关于</a>
+          <a href="#contact">联系</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 缘合Lab. All rights reserved.</p>
+        <p class="icp">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备XXXXXXXX号-X</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
